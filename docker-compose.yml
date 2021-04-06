@@ -1,10 +1,12 @@
-version: '2'
-   services:
-    webbuilder:
-        image:
+version: "2.4"
+  services:
+   webhost:
+        image:ubuntu
 
 # save data to folder /opt/data-les7
 
    web:
-
+      image: "nginx:alpine"
+      ports:
+         - "80:80"
 # import data from /opt/data-les7
